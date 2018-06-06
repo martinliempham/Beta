@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.martinliempham.beta;
 
 import android.app.Application;
 

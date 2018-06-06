@@ -6,13 +6,14 @@ import {
   Image,
   Text,
   View,
-  ScrollView
+  ScrollView,
+  StatusBar
 } from 'react-native';
-const styles = './app/style';
-import Toolbar from './app/components/Toolbar/Toolbar';
 import firebase from 'react-native-firebase';
 
-export default class App extends React.Component {
+const styles = require('../../style');
+
+export default class Toolbar extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -27,12 +28,13 @@ export default class App extends React.Component {
   render() {
     return (
       <ScrollView>
-        <View style={styles.container}>
-          <Toolbar title="Beta" />
+        <StatusBar backgroundColor="coral" barStyle="light-content" />
+        <View style={styles.navbar}>
+          <Text style={styles.navbarTitle}>{this.props.title}</Text>
         </View>
       </ScrollView>
     );
   }
 }
 
-AppRegistry.registerComponent('Beta', () => App);
+AppRegistry.registerComponent('Toolbar', () => Toolbar);
