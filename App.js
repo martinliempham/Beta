@@ -26,11 +26,9 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
-          <Toolbar title="Beta" />
-        </View>
-      </ScrollView>
+      <View style={styles.container}>
+        <Toolbar title="Beta" />
+      </View>
     );
   }
 }

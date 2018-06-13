@@ -27,12 +27,12 @@ export default class Toolbar extends React.Component {
 
   render() {
     return (
-      <ScrollView>
-        <StatusBar backgroundColor="coral" barStyle="light-content" />
+      <View>
+        <StatusBar backgroundColor="orange" barStyle="dark-content" />
         <View style={styles.navbar}>
           <Text style={styles.navbarTitle}>{this.props.title}</Text>
         </View>
-      </ScrollView>
+      </View>
     );
   }
 }
